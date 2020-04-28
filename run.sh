@@ -1,3 +1,6 @@
+export FLASK_APP=main.py
+export FLASK_ENV=development
+
 CONF=conf.ini
 NETS=unlimAccessNetworks.ini
 rm $CONF
