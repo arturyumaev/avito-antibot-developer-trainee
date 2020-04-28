@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from flask import Flask, request, abort
 from redisTools import *
 from ConfigManager import ConfigManager
