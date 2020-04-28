@@ -1,6 +1,7 @@
 import redis
 
-r = redis.Redis(host='redis', port=6379, db=0)
+redisHost = open('redisHost.ini', 'r').readlines()[0][:-1]
+r = redis.Redis(host=redisHost, port=6379, db=0)
 
 def responseAllowed(token, nRequests, timeRange, lockTime):
     # Check the lock for subnet
